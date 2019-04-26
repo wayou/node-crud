@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>todo crud - todo list</title>
+    <style>
+      li{
+        padding: 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="/add">add</a>
+    <ul>
+      {% for item in list%}
+      <li>
+        <div class="todo-item">
+          <div class="content">#{{ loop.index }}[{%if item.is_done==0%}⏳{%else%}✅{%endif%}] {{ item.content }}</div>
+          <div class="action">
+            <button onclick="remove({{ item.id }})">remove</button>
+            <a href="/edit?id={{ item.id }}">edit</a>
+          </div>
+        </div>
+      </li>
+      {% else %}
+      <li>nothing yet. <a href="/add">add</a> some.</li>
+      {%endfor%}
+    </ul>
+    <a href="/add">add</a>
+    <script>
+      function remove(id) {
+        fetch("/remove", {
+          method: "post",
+          headers:{
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ id })
+        })
+          .then(response => response.json())
+          .then(data => {
+            if (data.status) {
+              alert(data.error_message);
+            } else {
+              alert("removed succussfully!");
+              location.reload();
+            }
+          })
+          .catch(error => alert(error));
+      }
+    </script>
+  </body>
+</html>

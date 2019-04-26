@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>todo crud - add todo</title>
+  </head>
+  <body>
+    <form autocomplete="off" action="/edit" method="POST">
+      <input autocomplete="false" name="hidden" type="text" style="display:none;">
+      <fieldset>
+        <legend>add todo</legend>
+        <input type="text" hidden name="id" value="{{ todo.id }}" />
+        <div class="form-row">
+          <label for="content">
+            todo content: <input name="content" type="text" placeholder="todo content..." id="content" value="{{ todo.content }}"
+            />
+          </label>
+        </div>
+        <div class="form-row">
+          <label for="is_done">
+            is complete:
+            <input
+              name="is_done"
+              type="checkbox"
+              id="is_done"
+              value="1"
+              {%if not todo.is_done=='0'%}checked{%endif%}
+            />
+          </label>
+        </div>
+        <button type="submit">submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

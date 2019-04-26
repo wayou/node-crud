@@ -1,0 +1,18 @@
+{
+  "name": "koa-crud",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-route": "^3.2.0",
+    "koa-views": "^6.2.0",
+    "mysql": "mysqljs/mysql",
+    "nunjucks": "^3.2.0",
+    "promise-mysql": "^3.3.1"
+  }
+}
