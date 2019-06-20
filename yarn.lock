@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@types/bluebird@^3.5.19":
-  version "3.5.26"
-  resolved "https://registry.npmjs.org/@types/bluebird/-/bluebird-3.5.26.tgz#a38c438ae84fa02431d6892edf86e46edcbca291"
-  integrity sha512-aj2mrBLn5ky0GmAg6IPXrQjnN0iB/ulozuJ+oZdrHRAzRbXjGmu4UXsNCjFvPbSaaPZmniocdOzsM392qLOlmQ==
+"@types/bluebird@^3.5.26":
+  version "3.5.27"
+  resolved "https://registry.yarnpkg.com/@types/bluebird/-/bluebird-3.5.27.tgz#61eb4d75dc6bfbce51cf49ee9bbebe941b2cb5d0"
+  integrity sha512-6BmYWSBea18+tSjjSC3QIyV93ZKAeNWGM7R6aYt1ryTZXrlHF+QLV0G2yV0viEGVyRkyQsWfMoJ0k/YghBX5sQ==
 
 "@types/mysql@^2.15.2":
   version "2.15.6"
@@ -141,7 +141,7 @@ binary-extensions@^1.0.0:
   resolved "https://registry.npm.taobao.org/binary-extensions/download/binary-extensions-1.13.1.tgz#598afe54755b2868a5330d2aff9d4ebb53209b65"
   integrity sha1-WYr+VHVbKGilMw0q/51Ou1Mgm2U=
 
-bluebird@^3.1.1, bluebird@^3.5.0, bluebird@^3.5.1:
+bluebird@^3.1.1, bluebird@^3.5.1:
   version "3.5.4"
   resolved "https://registry.npm.taobao.org/bluebird/download/bluebird-3.5.4.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fbluebird%2Fdownload%2Fbluebird-3.5.4.tgz#d6cc661595de30d5b3af5fcedd3c0b3ef6ec5714"
   integrity sha1-1sxmFZXeMNWzr1/O3TwLPvbsVxQ=
@@ -1143,7 +1143,7 @@ ms@^2.1.1:
   resolved "https://registry.npm.taobao.org/ms/download/ms-2.1.1.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fms%2Fdownload%2Fms-2.1.1.tgz#30a5864eb3ebb0a66f2ebe6d727af06a09d86e0a"
   integrity sha1-MKWGTrPrsKZvLr5tcnrwagnYbgo=
 
-mysql@^2.14.1, mysql@mysqljs/mysql:
+mysql@^2.17.1, mysql@mysqljs/mysql:
   version "2.17.1"
   resolved "https://codeload.github.com/mysqljs/mysql/tar.gz/4da394a1dac5a08edb67652c79b5841e51f90aaf"
   dependencies:
@@ -1390,15 +1390,15 @@ process-nextick-args@~2.0.0:
   resolved "https://registry.npm.taobao.org/process-nextick-args/download/process-nextick-args-2.0.0.tgz#a37d732f4271b4ab1ad070d35508e8290788ffaa"
   integrity sha1-o31zL0JxtKsa0HDTVQjoKQeI/6o=
 
-promise-mysql@^3.3.1:
-  version "3.3.1"
-  resolved "https://registry.npm.taobao.org/promise-mysql/download/promise-mysql-3.3.1.tgz#31ad1bbff065a9f2abb2627294502c98045d3d16"
-  integrity sha1-Ma0bv/BlqfKrsmJylFAsmARdPRY=
+promise-mysql@^4.0.4:
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/promise-mysql/-/promise-mysql-4.0.4.tgz#e7bc47ad9b4e3119e559ae5b0c519f19b1952ee4"
+  integrity sha512-bNDXHrHvHOfdmwLx77XbG54lZQFIUFrPU4Oc7nPRli3dK6brpQ3jwIB2WUzu1Jbf9BPV9RiX3RqamxXnm45AlQ==
   dependencies:
-    "@types/bluebird" "^3.5.19"
+    "@types/bluebird" "^3.5.26"
     "@types/mysql" "^2.15.2"
-    bluebird "^3.5.0"
-    mysql "^2.14.1"
+    bluebird "^3.5.1"
+    mysql "^2.17.1"
 
 proto-list@~1.2.1:
   version "1.2.4"
