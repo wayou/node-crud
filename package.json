@@ -10,7 +10,7 @@
     "koa": "^2.7.0",
     "koa-bodyparser": "^4.2.1",
     "koa-route": "^3.2.0",
-    "koa-views": "^6.2.0",
+    "koa-views": "^6.3.1",
     "mysql": "mysqljs/mysql",
     "nunjucks": "^3.2.0",
     "promise-mysql": "^3.3.1"
