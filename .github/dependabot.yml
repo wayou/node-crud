@@ -1,0 +1,18 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "21:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: promise-mysql
+    versions:
+    - 5.0.2
+  - dependency-name: koa-views
+    versions:
+    - 7.0.0
+  - dependency-name: nunjucks
+    versions:
+    - 3.2.2
